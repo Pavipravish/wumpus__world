@@ -1,7 +1,7 @@
 <h1>ExpNo 9: Solve Wumpus World Problem using Python demonstrating Inferences from Propositional Logic</h1> 
-<h3>Name:K.Saranya</h3>
-<h3>Register Number:212224040298</h3>
-<h3>Date:18.11.2026</h3>
+<h3>Name: PRAVISH J</h3>
+<h3>Register Number:212224040249</h3>
+<h3>Date:20.11.2026</h3>
 <H3>Aim:</H3>
 <p>
     To solve  Wumpus World Problem using Python demonstrating Inferences from Propositional Logic
@@ -26,7 +26,6 @@ It is assumed that there will always be a safe path that the agent can take to e
 <hr>
 <h1>Sample Input and Output:</h1>
 <hr>
-
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/8696111a-a4a7-47cb-ba4b-43a4ef88573f)
 ![image](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/87870499/4be5bf06-79fa-4fa0-9334-38a33f06060b)
 <h1>Program:</h1>
@@ -82,8 +81,7 @@ while player:
         )
         if arrow_choice == "y":
             arrow_throw = input(
-                "press u to throw up\npress d to throw down\npress l to throw left\npress r to throw right\n"
-            )
+                "press u to throw up\npress d to throw down\npress l to throw left\npress r to throw right\n"  )
             if arrow_throw == "u":
                 if row > 0 and wumpus[row - 1][column] == "WUMPUS":
                     print("wumpus killed!")
@@ -119,8 +117,7 @@ while player:
                 else:
                     print("arrow wasted...")
                     score -= 10
-                    print("score: ", score)
-            elif arrow_throw == "r":
+                    print("score: ", score)    elif arrow_throw == "r":
                 if column < 3 and wumpus[row][column + 1] == "WUMPUS":
                     print("wumpus killed!")
                     score += 1000
@@ -149,7 +146,6 @@ while player:
         print("Ahhhhh!!!!\nYou fell in pit.\nAnd your score is: ", score, "\n")
         break
 ```
-
 <h1>Output:</h1>
 <img width="1192" height="648" alt="Screenshot 2026-11-19 084503" src="https://github.com/user-attachments/assets/c760dc3f-1b81-4482-861c-539d7fc5b7ee" />
 
